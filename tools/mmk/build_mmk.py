@@ -51,27 +51,27 @@ UI = {
    homage="Translator’s homage (Tibetan only)", chcolo='Chapter colophon', ded='Dedication verses', nodv='no Derge counterpart',
    notnum='not numbered in [G]', dag='† marks a verse with an editorial note at the end of the volume.',
    translator=D['translator_line'], footer='A Vajrakula translation · Public translations', note_colo='Colophon',
-   nextc='Next', description='Nāgārjuna’s Root Verses on the Middle Way, called Prajñā (Mūlamadhyamakakārikā), translated by Dr. Federico Andino. A scrollable edition for reading on phones.',
+   nextc='Next', description='Nāgārjuna’s Root Verses on the Middle Way, called Prajñā (Mūlamadhyamakakārikā), translated by Lama Fede Andino. A scrollable edition for reading on phones.',
    end='End of the text', dagt='Editorial note'),
  'es': dict(htmllang='es', short='ES', chapter='Capítulo', contents='Índice', begin='Comenzar a leer', top='Volver al inicio',
    next='Capítulo siguiente', prev='Capítulo anterior', about='Acerca de esta edición', summary='Resumen', sources='Fuentes', sigla='Siglas',
    siglum='Sigla', source='Fuente', notes='Notas editoriales', n_general='General', n_verses='Notas a los versos (†)',
    homage='Homenaje del traductor (solo en tibetano)', chcolo='Colofón del capítulo', ded='Versos de dedicatoria', nodv='sin equivalente en Derge',
    notnum='sin número en [G]', dag='† señala un verso con nota editorial al final del volumen.',
-   translator='Traducción al inglés, portugués y castellano rioplatense: Dr. Federico Andino', footer='Una traducción de Vajrakula · Traducciones públicas', note_colo='Colofón',
-   nextc='Siguiente', description='Los Versos Raíz del Camino del Medio, llamados Prajñā (Mūlamadhyamakakārikā) de Nāgārjuna, traducidos por el Dr. Federico Andino. Edición para leer en el celular.',
+   translator='Traducción al inglés, portugués y castellano rioplatense: Lama Fede Andino', footer='Una traducción de Vajrakula · Traducciones públicas', note_colo='Colofón',
+   nextc='Siguiente', description='Los Versos Raíz del Camino del Medio, llamados Prajñā (Mūlamadhyamakakārikā) de Nāgārjuna, traducidos por el Lama Fede Andino. Edición para leer en el celular.',
    end='Fin del texto', dagt='Nota editorial'),
  'pt': dict(htmllang='pt', short='PT', chapter='Capítulo', contents='Índice', begin='Começar a ler', top='Voltar ao início',
    next='Próximo capítulo', prev='Capítulo anterior', about='Sobre esta edição', summary='Resumo', sources='Fontes', sigla='Siglas',
    siglum='Sigla', source='Fonte', notes='Notas editoriais', n_general='Geral', n_verses='Notas aos versos (†)',
    homage='Homenagem do tradutor (somente em tibetano)', chcolo='Colofão do capítulo', ded='Versos de dedicatória', nodv='sem equivalente em Derge',
    notnum='sem número em [G]', dag='† assinala um verso com nota editorial no fim do volume.',
-   translator='Tradução para o inglês, o português e o espanhol rio-platense: Dr. Federico Andino', footer='Uma tradução de Vajrakula · Traduções públicas', note_colo='Colofão',
-   nextc='Próximo', description='Os Versos Raiz do Caminho do Meio, chamados Prajñā (Mūlamadhyamakakārikā) de Nāgārjuna, traduzidos pelo Dr. Federico Andino. Edição para ler no celular.',
+   translator='Tradução para o inglês, o português e o espanhol rio-platense: Lama Fede Andino', footer='Uma tradução de Vajrakula · Traduções públicas', note_colo='Colofão',
+   nextc='Próximo', description='Os Versos Raiz do Caminho do Meio, chamados Prajñā (Mūlamadhyamakakārikā) de Nāgārjuna, traduzidos pelo Lama Fede Andino. Edição para ler no celular.',
    end='Fim do texto', dagt='Nota editorial'),
 }
 UI['all'] = dict(UI['en'], htmllang='en', short='ALL',
-   description='Nāgārjuna’s Root Verses on the Middle Way (Mūlamadhyamakakārikā) in Tibetan with Wylie, Sanskrit in Devanagari and IAST, English, Portuguese and Spanish, verse by verse. Translated by Dr. Federico Andino.')
+   description='Nāgārjuna’s Root Verses on the Middle Way (Mūlamadhyamakakārikā) in Tibetan with Wylie, Sanskrit in Devanagari and IAST, English, Portuguese and Spanish, verse by verse. Translated by Lama Fede Andino.')
 PAGES = ['all', 'en', 'es', 'pt']
 ALLNAME = {'en': 'All languages', 'es': 'Todas las lenguas', 'pt': 'Todas as línguas', 'all': 'All languages'}
 
