@@ -19,3 +19,11 @@ Tibetan (Derge D3824) and Sanskrit, translated into English, Português and Espa
 - `tools/mmk/parse_docx.py` — regenerates `data.json` from the .docx: `python3 -I parse_docx.py path/to/file.docx`
 - `tools/mmk/notes_pt.json` — Portuguese version of the editorial notes (the .docx has them in English and Spanish only; draft for the translator to review)
 - `tools/mmk/build_mmk.py` — regenerates the site: `cd tools/mmk && python3 build_mmk.py` (reuses `tools/style.css` + `tools/mmk/extra.css`)
+
+## Lotus Samādhi Repentance: Liturgy and Practical Guide
+Liturgy of Master Zhiyi (Part I) and a practical guide with condensed instructions (Part II), to be practised together with the Sūtra of the Lotus Flower of the Wonderful Dharma. English, Español, Português. English is translated by Acharya Vajraprajna; the Español and Português versions are drafts for the translator to review.
+
+- `lotus-repentance-rite/` — the published site (static; `/lotus-repentance-rite/`), one page per language plus a language chooser
+- `tools/rite/content/{en,es,pt}.txt` — source text, one typed line per line (`TYPE|text`; `PT` title, `PS` subtitle, `PC` attribution, `H2`/`H3`/`H4` headings, `P` paragraph, `C` chanted or spoken line, `V`/`VE` verse line / last line of a stanza, `OL`/`UL` list item, `PE` closing line, `CO` dedication; inline `*italic*` and `**bold**`). A `=====` line separates Part I from Part II. Every language file must match the English one line for line and type for type; the build stops with an error otherwise.
+- `tools/rite/meta.py` — interface strings per language
+- `tools/rite/build.py` — regenerates the site: `python3 tools/rite/build.py` (reuses `tools/style.css` + `tools/rite/extra.css`; cover image `tools/rite/cover.jpg`)

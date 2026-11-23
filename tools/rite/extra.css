@@ -1,0 +1,32 @@
+/* Lotus Samādhi Repentance — additions to the shared reading-edition stylesheet */
+.cover img{aspect-ratio:2048/1105}
+.by a{color:inherit;text-decoration:underline;text-decoration-color:rgba(184,144,42,.6);text-underline-offset:.2em}
+
+/* contents: part / section / subsection levels */
+.toc li.l0{border-bottom:0;margin-top:.9rem}
+.toc li.l0 a{padding:.5rem 0}
+.toc li.l0 a span{font-family:var(--display);font-size:1.1rem;font-style:italic}
+.toc li.l1 a{padding:.6rem 0 .6rem .4rem;font-size:.95rem}
+.toc li.l2{border-bottom:0}
+.toc li.l2 a{padding:.3rem 0 .3rem 1.6rem;font-size:.85rem;color:var(--bone-dim)}
+.toc a b{min-width:4.2rem}
+
+/* part openers and section titles */
+.chapter h2{font-size:1.55rem}
+.chapter.part h2{font-size:2rem}
+.chapter.part>header{margin-bottom:1.6rem}
+.part .sub{font-family:var(--display);font-style:italic;font-size:1.2rem;line-height:1.4;color:var(--bone-dim);margin:1rem 0 0}
+.part .attr{font-style:italic;color:var(--bone-dim);font-size:.95rem;text-align:center;hyphens:auto}
+
+/* sub-headings and lists */
+.chapter h4{font-family:var(--label);font-weight:400;text-transform:uppercase;letter-spacing:.18em;font-size:.7rem;line-height:1.7;color:var(--gilt);margin:2.4rem 0 1rem}
+.chapter ol,.chapter ul{margin:0 0 1.3em;padding-left:1.4rem}
+.chapter li{margin:0 0 .6em;padding-left:.2rem;hyphens:auto;-webkit-hyphens:auto}
+.chapter ol li::marker{font-family:var(--label);font-size:.8em;color:var(--gilt)}
+.chapter ul li::marker{color:var(--gilt)}
+.chapter b{font-weight:600;color:#D2B56A}
+
+/* spoken / chanted lines */
+.chapter p.chant{font-style:italic;padding-left:1.1rem;border-left:1px solid rgba(184,144,42,.55)}
+.chapter p.endline{text-align:center;font-style:italic;color:var(--bone-dim);margin-top:2rem}
+.chapter .colophon{padding-top:2rem}
