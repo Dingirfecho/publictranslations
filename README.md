@@ -27,3 +27,14 @@ Liturgy of Master Zhiyi (Part I) and a practical guide with condensed instructio
 - `tools/rite/content/{en,es,pt}.txt` — source text, one typed line per line (`TYPE|text`; `PT` title, `PS` subtitle, `PC` attribution, `H2`/`H3`/`H4` headings, `P` paragraph, `C` chanted or spoken line, `V`/`VE` verse line / last line of a stanza, `OL`/`UL` list item, `PE` closing line, `CO` dedication; inline `*italic*` and `**bold**`). A `=====` line separates Part I from Part II. Every language file must match the English one line for line and type for type; the build stops with an error otherwise.
 - `tools/rite/meta.py` — interface strings per language
 - `tools/rite/build.py` — regenerates the site: `python3 tools/rite/build.py` (reuses `tools/style.css` + `tools/rite/extra.css`; cover image `tools/rite/cover.jpg`)
+
+## Supplications to the Eight Vidyadharas and the Eight Great Siddhas of Tibet (Mipham, text MP58)
+Tibetan (text MP58, 5-43-1a – 5-43-3b) with Wylie, translated into Español, English and Português by Lama Fede Andino. Two supplications: Part I to the Eight Vidyadharas of the Noble Land, Part II to the Eight Great Siddhas of Tibet.
+
+- `eight-vidyadharas/` — the published site (static; `/eight-vidyadharas/`)
+  - `all/` — Tibetan, Wylie, Español, English, Português segment by segment, numbered as in the source PDF
+  - `es/`, `en/`, `pt/` — translation-only reading editions
+- `tools/mp58/data.json` — the full text (80 numbered segments), extracted once from the source PDF
+- `tools/mp58/parse_pdf.py` — regenerates `data.json`: `python3 -I parse_pdf.py path/to/MP58.pdf` (needs PyMuPDF and pdftotext)
+- `tools/mp58/build.py` — regenerates the site: `cd tools/mp58 && python3 build.py` (reuses `tools/style.css` + `tools/mp58/extra.css`)
+

@@ -1,0 +1,95 @@
+/* Mūlamadhyamakakārikā additions (appended to ../style.css by build_mmk.py) */
+:root{
+  --tibetan:"Noto Serif Tibetan","Kailasa","Jomolhari","Tibetan Machine Uni",serif;
+  --deva:"Tiro Devanagari Sanskrit","Kohinoor Devanagari","Devanagari Sangam MN","Noto Serif Devanagari",serif;
+}
+.langs{gap:0}
+.langs a{padding-left:.45rem;padding-right:.45rem}
+@media (max-width:23rem){.langs a{padding-left:.3rem;padding-right:.3rem}}
+
+/* title block: sacred title lines */
+.sacred{margin:0 0 .35rem;font-weight:400}
+.sacred.tib{font-family:var(--tibetan);font-size:1.7rem;line-height:1.7}
+.sacred.dev{font-family:var(--deva);font-size:1.45rem;line-height:1.6}
+.translit{font-style:italic;color:var(--bone-dim);margin:0 0 1.1rem;font-size:.98rem;line-height:1.5}
+.alt-title{font-family:var(--display);font-style:italic;font-weight:300;color:var(--bone-dim);font-size:1.3rem;line-height:1.25;margin:.2rem 0 0}
+.author{font-family:var(--display);font-size:1.5rem;font-weight:400;margin:1.3rem 0 0;letter-spacing:.01em}
+
+/* front matter */
+.front{padding:2.4rem 0 .5rem}
+.front h2{font-size:1.5rem;text-align:center;margin:0 0 1.4rem}
+.front h3{font-style:normal;font-family:var(--label);text-transform:uppercase;letter-spacing:.24em;font-size:.68rem;font-weight:400;color:var(--bone-dim);text-align:center;margin:2.2rem 0 1rem}
+.front p{margin:0 0 1.1em;hyphens:auto;-webkit-hyphens:auto}
+.srcs{font-size:.95rem;color:var(--bone-dim)}
+.srcs p{margin:0 0 .5em;hyphens:manual}
+.sigla{display:grid;grid-template-columns:5.4rem 1fr;gap:.2rem 1rem;margin:1rem 0 0;font-size:.92rem;line-height:1.55}
+.sigla dt{font-family:var(--label);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);padding-top:.35rem;overflow-wrap:anywhere}
+.sigla dd{margin:0 0 .8rem;color:var(--bone-dim);overflow-wrap:anywhere}
+
+/* chapter header extras */
+.chapter>header .iast{font-style:italic;color:var(--bone-dim);margin:.9rem 0 0;font-size:1rem}
+.chapter>header .devt{font-family:var(--deva);font-size:1.3rem;margin:1.1rem 0 0;line-height:1.5}
+.chapter>header .alt{font-family:var(--display);font-style:italic;font-weight:300;color:var(--bone-dim);font-size:1.25rem;line-height:1.25;margin:.5rem 0 0}
+.toc a span small{display:block;color:var(--bone-dim);font-size:.82rem;margin-top:.15rem}
+
+/* reading edition (single language) */
+.vs{margin:0 0 .2rem;scroll-margin-top:3.75rem}
+.vn{margin:1.6rem 0 -.7rem;font-family:var(--label);font-size:.66rem;letter-spacing:.2em;color:var(--bone-dim);text-transform:uppercase}
+.vn a{text-decoration:none}
+.vn .dg{letter-spacing:.14em;margin-left:.9rem;opacity:.75;text-transform:none}
+.dag{color:var(--gilt);text-decoration:none;margin-left:.5rem;font-family:var(--body);font-size:.95rem;letter-spacing:0}
+.vs .verse{margin-top:1.05rem;margin-bottom:.9rem}
+.sub{font-family:var(--label);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim);text-align:center;margin:2.4rem 0 .5rem}
+.colo{font-style:italic;color:var(--bone-dim);text-align:center;margin:2.2rem 0 0;font-size:.98rem}
+.homage{margin-top:.2rem}
+
+/* all-languages edition */
+.poly .chapter{content-visibility:auto;contain-intrinsic-size:auto 2600px}
+.lyr{display:grid;grid-template-columns:2.35rem 1fr;column-gap:.6rem;margin:0 0 .75rem}
+.lyr>b{font-family:var(--label);font-weight:400;font-size:.58rem;letter-spacing:.16em;color:var(--bone-dim);padding-top:.55rem;text-transform:uppercase}
+.lyr>div p{margin:0;padding-left:1.1em;text-indent:-1.1em;line-height:1.6;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:break-word}
+.lyr.tib p{font-family:var(--tibetan);font-size:1.28rem;line-height:1.95;font-weight:400}
+.lyr.dev p{font-family:var(--deva);font-size:1.12rem;line-height:1.7}
+.lyr.wyl p,.lyr.skt p{font-style:italic;color:var(--bone-dim);font-size:.9rem;line-height:1.55}
+.lyr.wyl,.lyr.skt{margin-bottom:.9rem}
+.lyr .sg{font-family:var(--label);font-style:normal;font-size:.62rem;letter-spacing:.1em;opacity:.8;margin-left:.4rem}
+.poly .trs{border-left:2px solid var(--lapis);padding-left:.95rem;margin:1.1rem 0 .4rem}
+.poly .trs .lyr{margin-bottom:.8rem}
+.poly .trs .lyr>b{padding-top:.28rem}
+.poly .trs .lyr p{font-size:1rem;line-height:1.58}
+.poly .src{margin-top:.9rem}
+.poly .vs{padding:.2rem 0 1.6rem;border-bottom:1px solid rgba(236,226,204,.07)}
+.poly .vs:last-of-type{border-bottom:0}
+.poly .vn{margin:1.4rem 0 .9rem}
+.poly .head{font-family:var(--label);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim);text-align:center;margin:2.6rem 0 1rem}
+.poly .colo-all p{margin:0}
+
+/* notes */
+.notes{padding:3rem 0 1rem}
+.notes>header{text-align:center;margin-bottom:2rem}
+.notes ol,.notes ul{list-style:none;margin:0;padding:0}
+.notes li{margin:0 0 1.3rem;font-size:.95rem;line-height:1.62;color:var(--bone)}
+.notes li p{margin:0 0 .55em;hyphens:manual;overflow-wrap:anywhere}
+.notes li .k{font-family:var(--label);font-size:.68rem;letter-spacing:.16em;color:var(--bone-dim);margin-right:.5rem}
+.notes li a.k{text-decoration:none}
+.notes h3{margin-top:2.4rem;text-align:center}
+.notes .back{text-decoration:none;color:var(--gilt);margin-left:.3rem}
+.notes .l2{color:var(--bone-dim)}
+
+@media (min-width:46rem){
+  .sacred.tib{font-size:2.1rem}
+  .lyr{grid-template-columns:2.8rem 1fr}
+  .lyr.tib p{font-size:1.4rem}
+}
+
+/* ---- MP58 additions ---- */
+.vs .verse{margin-top:.2rem}
+.chapter .verse.run .stanza{margin:0 0 .55rem}
+.chapter .verse.run{margin:1.2rem 0 1.4rem}
+.chapter .opening{font-style:italic;color:var(--bone-dim);text-align:center;margin:0 0 1.6rem}
+.mangalam{text-align:center;font-style:italic;color:var(--bone-dim);margin:2.4rem 0 0}
+.poly .mangalam{font-style:normal}
+.poly .colo-all{margin-top:1.2rem}
+.chapter>header .sacred.tib{margin-top:1.1rem}
+.chapter>header .translit{margin-bottom:0}
+.lede{text-align:center;color:var(--bone-dim);font-size:.98rem;margin:1.6rem 0 0;hyphens:auto}

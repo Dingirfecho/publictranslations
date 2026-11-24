@@ -1,0 +1,185 @@
+/* Vajrakula Public Translations — reading edition
+   Brand: Vajrakula Brand Book, Vol. I (MMXXVI). Quiet register, no animation. */
+:root{
+  --midnight:#0E1525; --lapis:#1D3A64; --bone:#ECE2CC; --jade:#3D524A;
+  --cinnabar:#8E2418; --gilt:#B8902A; --sumi:#0A0908;
+  --bone-dim:rgba(236,226,204,.68);
+  --display:"Cormorant Garamond","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --body:"Spectral","Iowan Old Style",Georgia,"Times New Roman",serif;
+  --label:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{background:var(--midnight);color:var(--bone);-webkit-text-size-adjust:100%;text-size-adjust:100%;color-scheme:dark;scroll-padding-top:3.75rem}
+body{margin:0;font-family:var(--body);font-weight:400;font-size:1.0625rem;line-height:1.72;
+  background:var(--midnight);color:var(--bone);-webkit-font-smoothing:antialiased;
+  padding-bottom:env(safe-area-inset-bottom)}
+a{color:inherit}
+.skip{position:absolute;left:-999px;top:0;background:var(--bone);color:var(--sumi);padding:.6rem 1rem;font-family:var(--label);font-size:.8rem;z-index:20}
+.skip:focus{left:0}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:3px}
+
+/* ---- top bar ---- */
+.bar{position:sticky;top:0;z-index:10;background:rgba(14,21,37,.97);border-bottom:1px solid rgba(184,144,42,.28);
+  padding-top:env(safe-area-inset-top)}
+.bar-in{display:flex;align-items:center;justify-content:space-between;max-width:40rem;margin:0 auto;
+  padding:0 max(1.1rem,env(safe-area-inset-right)) 0 max(1.1rem,env(safe-area-inset-left));min-height:3.25rem}
+.label,.bar summary,.langs a,.toc a,.nav a,.folio,.kicker,.notice,.footer,.begin{font-family:var(--label);font-weight:400;text-transform:uppercase;letter-spacing:.24em;font-size:.68rem}
+.bar summary{list-style:none;cursor:pointer;padding:1rem 0;color:var(--bone)}
+.bar summary::-webkit-details-marker{display:none}
+.bar summary::after{content:"";display:inline-block;width:.42rem;height:.42rem;margin-left:.7rem;border-right:1px solid var(--gilt);border-bottom:1px solid var(--gilt);transform:rotate(45deg) translateY(-2px)}
+.bar details[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+.langs{display:flex;gap:.2rem}
+.langs a{text-decoration:none;padding:1rem .55rem;color:var(--bone-dim)}
+.langs a[aria-current]{color:var(--bone);border-bottom:1px solid var(--gilt);padding-bottom:calc(1rem - 1px)}
+.toc{position:absolute;left:0;right:0;top:100%;background:var(--lapis);max-height:72vh;overflow-y:auto;overscroll-behavior:contain;
+  border-bottom:1px solid rgba(184,144,42,.4)}
+.toc ol{list-style:none;margin:0 auto;padding:.6rem max(1.1rem,env(safe-area-inset-right)) 1rem max(1.1rem,env(safe-area-inset-left));max-width:40rem}
+.toc li{border-bottom:1px solid rgba(236,226,204,.1)}
+.toc li:last-child{border-bottom:0}
+.toc a{display:flex;gap:1rem;align-items:baseline;text-decoration:none;padding:.85rem 0;text-transform:none;letter-spacing:.01em;font-family:var(--body);font-size:1rem;line-height:1.35}
+.toc a b{font-family:var(--label);font-weight:400;text-transform:uppercase;letter-spacing:.2em;font-size:.62rem;min-width:3.4rem;color:var(--bone-dim)}
+
+/* ---- cover ---- */
+.cover{margin:0}
+.cover img{display:block;width:100%;height:auto;aspect-ratio:2048/1101;background:var(--lapis)}
+.title-block{max-width:40rem;margin:0 auto;padding:2.6rem max(1.4rem,env(safe-area-inset-left)) 3rem max(1.4rem,env(safe-area-inset-right));text-align:center}
+.kicker{color:var(--bone-dim);margin:0 0 1.3rem}
+h1{font-family:var(--display);font-weight:300;font-size:2.35rem;line-height:1.12;letter-spacing:-.01em;margin:0 0 1.4rem;text-wrap:balance}
+.by{font-style:italic;color:var(--bone-dim);margin:1.2rem 0 0;font-size:1rem}
+.taper{height:1px;border:0;margin:1.6rem auto;width:7.5rem;background:linear-gradient(90deg,transparent,var(--gilt) 30%,var(--gilt) 70%,transparent)}
+.begin{display:inline-block;margin-top:1.4rem;text-decoration:none;color:var(--bone);padding:.9rem 1.5rem;border:1px solid rgba(184,144,42,.55)}
+
+/* ---- chapters ---- */
+main{max-width:40rem;margin:0 auto;padding:0 max(1.4rem,env(safe-area-inset-left)) 2rem max(1.4rem,env(safe-area-inset-right))}
+.chapter{padding:3.2rem 0 1rem}
+.chapter>header{text-align:center;margin-bottom:2.2rem}
+.folio{color:var(--bone-dim);margin:0 0 1rem}
+h2{font-family:var(--display);font-weight:400;font-size:2rem;line-height:1.15;letter-spacing:-.01em;margin:1.1rem 0 0;text-wrap:balance}
+h3{font-family:var(--display);font-style:italic;font-weight:400;font-size:1.35rem;margin:2.2rem 0 1rem;line-height:1.3}
+.chapter p{margin:0 0 1.15em;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.chapter p.dc::first-letter{font-family:var(--display);font-weight:500;color:var(--gilt);float:left;font-size:3.6em;line-height:.78;padding:.06em .09em 0 0}
+.notice{color:var(--bone-dim);text-transform:none;letter-spacing:.02em;font-size:.8rem;line-height:1.5;border-top:1px dashed rgba(184,144,42,.5);border-bottom:1px dashed rgba(184,144,42,.5);padding:.8rem 0;margin:0 0 1.8rem;text-align:center}
+.verse{margin:1.5rem 0 1.7rem;padding-left:1.1rem;border-left:2px solid var(--lapis)}
+.stanza{margin:0 0 1.05rem}
+.stanza p{margin:0;padding-left:1.1em;text-indent:-1.1em;line-height:1.6;hyphens:manual;-webkit-hyphens:manual}
+.stanza:last-child{margin-bottom:0}
+.end{display:flex;flex-direction:column;align-items:center;gap:1.4rem;padding:2.4rem 0 .6rem}
+.dot{width:.42rem;height:.42rem;border-radius:50%;background:var(--cinnabar)}
+.nav{display:flex;justify-content:space-between;gap:1rem;width:100%}
+.nav a{text-decoration:none;color:var(--bone-dim);padding:.8rem 0;max-width:48%}
+.nav a:last-child{text-align:right;margin-left:auto}
+.nav a:hover,.nav a:focus-visible{color:var(--bone)}
+
+/* ---- colophon / footer ---- */
+.colophon{text-align:center;padding:3rem 0 1rem}
+.colophon .folio{margin-bottom:1.1rem}
+.colophon p{font-style:italic;color:var(--bone);margin:1.4rem 0 0;hyphens:auto}
+.footer{text-align:center;color:var(--bone-dim);padding:2.4rem 1.4rem 3.2rem;border-top:1px solid rgba(184,144,42,.22);margin-top:2.5rem;letter-spacing:.2em}
+.footer a{text-decoration:none}
+
+/* ---- language chooser ---- */
+.choose{display:flex;flex-direction:column;gap:.9rem;margin-top:2rem}
+.choose a{font-family:var(--display);font-size:1.5rem;text-decoration:none;padding:1rem;border:1px solid rgba(184,144,42,.45)}
+
+@media (min-width:46rem){
+  body{font-size:1.15rem}
+  h1{font-size:3rem}
+  h2{font-size:2.4rem}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:auto}}
+
+/* Mūlamadhyamakakārikā additions (appended to ../style.css by build_mmk.py) */
+:root{
+  --tibetan:"Noto Serif Tibetan","Kailasa","Jomolhari","Tibetan Machine Uni",serif;
+  --deva:"Tiro Devanagari Sanskrit","Kohinoor Devanagari","Devanagari Sangam MN","Noto Serif Devanagari",serif;
+}
+.langs{gap:0}
+.langs a{padding-left:.45rem;padding-right:.45rem}
+@media (max-width:23rem){.langs a{padding-left:.3rem;padding-right:.3rem}}
+
+/* title block: sacred title lines */
+.sacred{margin:0 0 .35rem;font-weight:400}
+.sacred.tib{font-family:var(--tibetan);font-size:1.7rem;line-height:1.7}
+.sacred.dev{font-family:var(--deva);font-size:1.45rem;line-height:1.6}
+.translit{font-style:italic;color:var(--bone-dim);margin:0 0 1.1rem;font-size:.98rem;line-height:1.5}
+.alt-title{font-family:var(--display);font-style:italic;font-weight:300;color:var(--bone-dim);font-size:1.3rem;line-height:1.25;margin:.2rem 0 0}
+.author{font-family:var(--display);font-size:1.5rem;font-weight:400;margin:1.3rem 0 0;letter-spacing:.01em}
+
+/* front matter */
+.front{padding:2.4rem 0 .5rem}
+.front h2{font-size:1.5rem;text-align:center;margin:0 0 1.4rem}
+.front h3{font-style:normal;font-family:var(--label);text-transform:uppercase;letter-spacing:.24em;font-size:.68rem;font-weight:400;color:var(--bone-dim);text-align:center;margin:2.2rem 0 1rem}
+.front p{margin:0 0 1.1em;hyphens:auto;-webkit-hyphens:auto}
+.srcs{font-size:.95rem;color:var(--bone-dim)}
+.srcs p{margin:0 0 .5em;hyphens:manual}
+.sigla{display:grid;grid-template-columns:5.4rem 1fr;gap:.2rem 1rem;margin:1rem 0 0;font-size:.92rem;line-height:1.55}
+.sigla dt{font-family:var(--label);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bone-dim);padding-top:.35rem;overflow-wrap:anywhere}
+.sigla dd{margin:0 0 .8rem;color:var(--bone-dim);overflow-wrap:anywhere}
+
+/* chapter header extras */
+.chapter>header .iast{font-style:italic;color:var(--bone-dim);margin:.9rem 0 0;font-size:1rem}
+.chapter>header .devt{font-family:var(--deva);font-size:1.3rem;margin:1.1rem 0 0;line-height:1.5}
+.chapter>header .alt{font-family:var(--display);font-style:italic;font-weight:300;color:var(--bone-dim);font-size:1.25rem;line-height:1.25;margin:.5rem 0 0}
+.toc a span small{display:block;color:var(--bone-dim);font-size:.82rem;margin-top:.15rem}
+
+/* reading edition (single language) */
+.vs{margin:0 0 .2rem;scroll-margin-top:3.75rem}
+.vn{margin:1.6rem 0 -.7rem;font-family:var(--label);font-size:.66rem;letter-spacing:.2em;color:var(--bone-dim);text-transform:uppercase}
+.vn a{text-decoration:none}
+.vn .dg{letter-spacing:.14em;margin-left:.9rem;opacity:.75;text-transform:none}
+.dag{color:var(--gilt);text-decoration:none;margin-left:.5rem;font-family:var(--body);font-size:.95rem;letter-spacing:0}
+.vs .verse{margin-top:1.05rem;margin-bottom:.9rem}
+.sub{font-family:var(--label);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim);text-align:center;margin:2.4rem 0 .5rem}
+.colo{font-style:italic;color:var(--bone-dim);text-align:center;margin:2.2rem 0 0;font-size:.98rem}
+.homage{margin-top:.2rem}
+
+/* all-languages edition */
+.poly .chapter{content-visibility:auto;contain-intrinsic-size:auto 2600px}
+.lyr{display:grid;grid-template-columns:2.35rem 1fr;column-gap:.6rem;margin:0 0 .75rem}
+.lyr>b{font-family:var(--label);font-weight:400;font-size:.58rem;letter-spacing:.16em;color:var(--bone-dim);padding-top:.55rem;text-transform:uppercase}
+.lyr>div p{margin:0;padding-left:1.1em;text-indent:-1.1em;line-height:1.6;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:break-word}
+.lyr.tib p{font-family:var(--tibetan);font-size:1.28rem;line-height:1.95;font-weight:400}
+.lyr.dev p{font-family:var(--deva);font-size:1.12rem;line-height:1.7}
+.lyr.wyl p,.lyr.skt p{font-style:italic;color:var(--bone-dim);font-size:.9rem;line-height:1.55}
+.lyr.wyl,.lyr.skt{margin-bottom:.9rem}
+.lyr .sg{font-family:var(--label);font-style:normal;font-size:.62rem;letter-spacing:.1em;opacity:.8;margin-left:.4rem}
+.poly .trs{border-left:2px solid var(--lapis);padding-left:.95rem;margin:1.1rem 0 .4rem}
+.poly .trs .lyr{margin-bottom:.8rem}
+.poly .trs .lyr>b{padding-top:.28rem}
+.poly .trs .lyr p{font-size:1rem;line-height:1.58}
+.poly .src{margin-top:.9rem}
+.poly .vs{padding:.2rem 0 1.6rem;border-bottom:1px solid rgba(236,226,204,.07)}
+.poly .vs:last-of-type{border-bottom:0}
+.poly .vn{margin:1.4rem 0 .9rem}
+.poly .head{font-family:var(--label);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim);text-align:center;margin:2.6rem 0 1rem}
+.poly .colo-all p{margin:0}
+
+/* notes */
+.notes{padding:3rem 0 1rem}
+.notes>header{text-align:center;margin-bottom:2rem}
+.notes ol,.notes ul{list-style:none;margin:0;padding:0}
+.notes li{margin:0 0 1.3rem;font-size:.95rem;line-height:1.62;color:var(--bone)}
+.notes li p{margin:0 0 .55em;hyphens:manual;overflow-wrap:anywhere}
+.notes li .k{font-family:var(--label);font-size:.68rem;letter-spacing:.16em;color:var(--bone-dim);margin-right:.5rem}
+.notes li a.k{text-decoration:none}
+.notes h3{margin-top:2.4rem;text-align:center}
+.notes .back{text-decoration:none;color:var(--gilt);margin-left:.3rem}
+.notes .l2{color:var(--bone-dim)}
+
+@media (min-width:46rem){
+  .sacred.tib{font-size:2.1rem}
+  .lyr{grid-template-columns:2.8rem 1fr}
+  .lyr.tib p{font-size:1.4rem}
+}
+
+/* ---- MP58 additions ---- */
+.vs .verse{margin-top:.2rem}
+.chapter .verse.run .stanza{margin:0 0 .55rem}
+.chapter .verse.run{margin:1.2rem 0 1.4rem}
+.chapter .opening{font-style:italic;color:var(--bone-dim);text-align:center;margin:0 0 1.6rem}
+.mangalam{text-align:center;font-style:italic;color:var(--bone-dim);margin:2.4rem 0 0}
+.poly .mangalam{font-style:normal}
+.poly .colo-all{margin-top:1.2rem}
+.chapter>header .sacred.tib{margin-top:1.1rem}
+.chapter>header .translit{margin-bottom:0}
+.lede{text-align:center;color:var(--bone-dim);font-size:.98rem;margin:1.6rem 0 0;hyphens:auto}
